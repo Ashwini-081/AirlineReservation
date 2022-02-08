@@ -1,11 +1,13 @@
 package Ashwini.Engineer.AirlineReservation.repository;
 
-import Ashwini.Engineer.AirlineReservation.entity.Passanger;
+
+
+import Ashwini.Engineer.AirlineReservation.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends JpaRepository<Passanger,Long>{
 
-    Passanger findByUserName(String userName);
-
+@Repository("userRepository")
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByEmail(String email);
 }
