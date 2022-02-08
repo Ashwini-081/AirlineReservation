@@ -1,4 +1,4 @@
-package Ashwini.Engineer.AirlineReservation.security;
+package Ashwini.Engineer.AirlineReservation.configuration;
 
 
 import javax.sql.DataSource;
